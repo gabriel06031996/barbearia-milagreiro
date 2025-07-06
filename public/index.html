@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imovel Prime - Encontre Sua Casa dos Sonhos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">Imovel Prime</h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#imoveis">Imóveis</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="/admin" class="admin-link">Admin</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <h1 class="hero-title">Encontre Sua Casa dos Sonhos</h1>
+                        <p class="hero-subtitle">Mais de 15 anos conectando famílias aos seus lares ideais</p>
+                        <div class="hero-cta">
+                            <a href="#contato" class="cta-primary">Fale Conosco</a>
+                            <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os imóveis disponíveis." class="cta-secondary">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>CRECI Certificado</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Transações Seguras</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Prêmio Excelência</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-handshake"></i>
+                    <span>Suporte 24/7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10.000+</div>
+                    <div class="stat-label">Imóveis Vendidos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5.000+</div>
+                    <div class="stat-label">Famílias Felizes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfação</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="imoveis" class="properties-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Imóveis em Destaque</h2>
+                <p class="section-subtitle">Selecionamos os melhores imóveis para você</p>
+            </div>
+            
+            <div class="properties-grid">
+                <!-- Property 1 -->
+                <div class="property-card" data-property-id="1">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casa Moderna">
+                        <div class="property-actions">
+                            <button class="action-btn favorite-btn" onclick="toggleFavorite(this)">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 850.000</div>
+                        <h3 class="property-title">Casa Moderna com Piscina</h3>
+                        <p class="property-description">Belíssima casa moderna com 4 quartos, piscina e jardim amplo.</p>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jardins, São Paulo - SP</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Quartos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Banheiros</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-car"></i>
+                                <span>2 Vagas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>350m²</span>
+                            </div>
+                        </div>
+                        <div class="property-agent">
+                            <div class="agent-info">
+                                <div class="agent-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="agent-details">
+                                    <span class="agent-name">Carlos Silva</span>
+                                    <span class="agent-title">Corretor Sênior</span>
+                                </div>
+                            </div>
+                            <button class="contact-agent" onclick="contactAgent('Carlos Silva', 'Casa Moderna com Piscina', '5511999887766')">
+                                <i class="fab fa-whatsapp"></i>
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card" data-property-id="2">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Apartamento de Luxo">
+                        <div class="property-actions">
+                            <button class="action-btn favorite-btn" onclick="toggleFavorite(this)">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 1.200.000</div>
+                        <h3 class="property-title">Apartamento de Luxo Vista Panorâmica</h3>
+                        <p class="property-description">Apartamento alto padrão com vista panorâmica da cidade.</p>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Vila Olímpia, São Paulo - SP</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Quartos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Banheiros</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-car"></i>
+                                <span>2 Vagas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>120m²</span>
+                            </div>
+                        </div>
+                        <div class="property-agent">
+                            <div class="agent-info">
+                                <div class="agent-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="agent-details">
+                                    <span class="agent-name">Ana Costa</span>
+                                    <span class="agent-title">Especialista em Luxo</span>
+                                </div>
+                            </div>
+                            <button class="contact-agent" onclick="contactAgent('Ana Costa', 'Apartamento de Luxo Vista Panorâmica', '5511988776655')">
+                                <i class="fab fa-whatsapp"></i>
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card" data-property-id="3">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Casa Familiar">
+                        <div class="property-actions">
+                            <button class="action-btn favorite-btn" onclick="toggleFavorite(this)">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 4.500<span>/mês</span></div>
+                        <h3 class="property-title">Casa Familiar Aconchegante</h3>
+                        <p class="property-description">Casa espaçosa perfeita para famílias, com quintal amplo.</p>
+                        <div class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Morumbi, São Paulo - SP</span>
+                        </div>
+                        <div class="property-features">
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Quartos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Banheiros</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-car"></i>
+                                <span>2 Vagas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>200m²</span>
+                            </div>
+                        </div>
+                        <div class="property-agent">
+                            <div class="agent-info">
+                                <div class="agent-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="agent-details">
+                                    <span class="agent-name">Roberto Lima</span>
+                                    <span class="agent-title">Especialista em Locação</span>
+                                </div>
+                            </div>
+                            <button class="contact-agent" onclick="contactAgent('Roberto Lima', 'Casa Familiar Aconchegante', '5511977665544')">
+                                <i class="fab fa-whatsapp"></i>
+                                Contato
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <a href="#contato" class="cta-button">Ver Todos os Imóveis</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Excelente atendimento! Encontrei minha casa dos sonhos em apenas 2 semanas. Equipe muito profissional e atenciosa."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Maria Silva</h4>
+                            <span>Cliente Satisfeita</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Processo de compra muito transparente e seguro. Recomendo a Imovel Prime para quem busca qualidade e confiança."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>João Santos</h4>
+                            <span>Investidor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Venderam meu apartamento pelo melhor preço do mercado. Equipe dedicada e resultados excepcionais!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <span>Proprietária</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Estamos prontos para ajudar você a encontrar o imóvel ideal</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Telefone</h4>
+                                <p>(11) 3000-0000</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <p>(11) 99999-9999</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>E-mail</h4>
+                                <p>contato@imovelprime.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Endereço</h4>
+                                <p>Av. Paulista, 1000<br>São Paulo - SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">Interesse</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Selecione seu interesse</option>
+                                <option value="comprar">Comprar Imóvel</option>
+                                <option value="alugar">Alugar Imóvel</option>
+                                <option value="vender">Vender Imóvel</option>
+                                <option value="avaliar">Avaliar Imóvel</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre o que você procura..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Solicitação
+                        </button>
+
+                        <div class="form-guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantimos resposta em até 30 minutos</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Imovel Prime</h3>
+                    <p class="footer-description">Mais de 15 anos conectando famílias aos seus lares ideais com excelência e confiança.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Compra de Imóveis</a></li>
+                        <li><a href="#">Venda de Imóveis</a></li>
+                        <li><a href="#">Locação</a></li>
+                        <li><a href="#">Avaliação</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> (11) 3000-0000</li>
+                        <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@imovelprime.com.br</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Imovel Prime. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
